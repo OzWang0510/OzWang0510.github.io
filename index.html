@@ -1,48 +1,246 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王彥灃的個人簡介 - 我的期末專題</title>
-    <meta name="description" content="王彥灃的個人簡介，包含興趣、學歷及未來目標。">
+  <meta charset="UTF-8">
+  <title>自我介紹 - 王彥灃</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f1ec;
+      color: #333;
+    }
+
+    .header {
+      background-color: #6a8b72;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .left-panel {
+      flex: 1;
+      background-color: #f7f9f8;
+      padding: 30px;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .left-panel img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #6a8b72;
+    }
+
+    .left-panel h2 {
+      margin-top: 20px;
+    }
+
+    .left-panel p {
+      margin: 8px 0;
+    }
+
+    .right-panel {
+      flex: 2;
+      padding: 30px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h3 {
+      border-bottom: 2px solid #6a8b72;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: #6a8b72;
+    }
+
+    .section p {
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    ul.image-list li {
+      margin-bottom: 30px;
+      padding: 10px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    ul.image-list img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #a8b5a2;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-panel, .right-panel {
+        padding: 20px;
+      }
+
+      ul.image-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      ul.image-list img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>我的期末專題</h1>
-    <a href="https://www.nttu.edu.tw" target="_blank">
-    <img src="https://cloud.culture.tw/e_new_upload/cms/image/A0/B0/C0/D10/E3/F316/b60fad04-736b-46f1-9599-1887acf7c16a.jpg" 
-         alt="台東大學照片" width="600px">
-</a>
 
-    <h2>個人資料</h2>
-    <ul>
-        <li>姓名：王彥灃</li>
-        <li>性別：男</li>
-        <li>年齡：萬歲萬歲萬萬歲</li>
-        <li>聯絡電話：0900000000</li>
-        <li>Email：wyfoscar@gmail.com</li>
-        <li>地址：台中市中區臺灣大道一段1號</li>
-    </ul>
+  <div class="header">
+    <h1>自我介紹</h1>
+  </div>
 
-    <p>
-        我來自台中市，這裡是慶記之都。我目前就讀
-        <strong>國立台東大學綠能與資訊科技學系</strong>，希望未來能從事
-        <em>半導體產業</em>或<em>機械相關工作</em>。在求學過程中，我曾擔任
-        班級幹部，學習如何與人溝通及管理時間。透過參與課外活動，我提升了
-        團隊合作能力，也更懂得如何與不同背景的人相處。<br><br>
-        我的個性負責任，樂於助人，無論在生活或工作中，我都會盡力完成交付
-        的任務。我認為成長來自於挑戰，因此我勇於接受新的學習機會，並持續
-        提升自己的專業能力。
-    </p>
+  <div class="container">
+    <div class="left-panel">
+      <img src="3.PNG" alt="個人大頭貼">
+      <h2>王彥灃</h2>
+      <p><strong>年齡：</strong>20 歲</p>
+      <p><strong>科系：</strong>綠色能源與資訊科技學系 Department of Green Energy and Information Technology</p>
+      <p><strong>聯絡信箱：</strong>wyfoscar@gmail.com</p>
+    </div>
 
-    <h2>興趣</h2>
-    <p>我喜歡打桌球，那能使我專注而且解壓，並且是一個很好的運動，能讓我流流汗，變得更健康
-    </p>
-    <ul>
-        <li>Table Tennis(桌球)</li>
-    </ul>
+    <div class="right-panel">
+      <div class="section">
+        <h3>關於我</h3>
+        <p>
+          我來自台中市，這裡是慶記之都。我目前就讀國立台東大學綠能與資訊科技學系，希望未來能從事半導體產業或機械相關工作。在求學過程中，我曾擔任班級幹部（班代），學習如何與人溝通及管理時間（找別人做事）。透過參與課外活動，我提升了團隊合作能力，也更懂得如何與不同背景的人相處。
+        </p>
+      </div>
 
-    <h2>相關連結</h2>
-    <p><a href="https://www.nttu.edu.tw" target="_blank">國立台東大學</a></p>
-    <p><a href="https://git.nttu.edu.tw" target="_blank">國立台東大學 - 綠能與資訊科技學系</a></p>
+      <div class="section">
+        <h3>興趣與專長</h3>
+        <p>
+          我喜歡打桌球，那能使我專注而且解壓，並且是一個很好的運動，能讓我流流汗，變得更健康。我也喜歡美食，吃美食讓我感到心情愉悅，有一個好心情才能有更多勇氣對待明天。
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>學習動機與目標</h3>
+        <ul>
+          <li><strong>找工作更有優勢:</strong> 學會前後端設計等於多一條職涯道路。</li>
+          <li><strong>自己動手做副業或接案:</strong> 可以打造自己的網站、接案賺錢。</li>
+          <li><strong>思考邏輯會變更清楚:</strong> 寫程式訓練有條理的思考方式。</li>
+          <li><strong>學會一技之長:</strong> 可應用於跨平台網站、API、雲端應用等。</li>
+          <li><strong>能把想法變成實體:</strong> 實現靈感、提升成就感。</li>
+          <li><strong>接軌未來科技:</strong> 為 AI、區塊鏈、IoT 等新趨勢打下基礎。</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>我的家鄉推薦景點（台中）</h3>
+        <ul class="image-list">
+          <li>
+            <img src="7.jpg" alt="國家歌劇院">
+            <div><strong>國家歌劇院：</strong> 由伊東豊雄設計，是結構與聲學的奇蹟。</div>
+          </li>
+          <li>
+            <img src="12.jpg" alt="審計新村">
+            <div><strong>審計新村：</strong> 老宿舍改建的文創聚落，適合拍照與探索，缺點是人多又超無聊。</div>
+          </li>
+          <li>
+            <img src="5.jpg" alt="草悟道">
+            <div><strong>草悟道：</strong> 城市綠廊，沿線有書店、表演空間，無聊＋1。</div>
+          </li>
+          <li>
+            <img src="IMG_6399.jpg" alt="大坑步道">
+            <div><strong>大坑登山步道：</strong> 登高望遠，適合健行與賞景，無聊＋2。</div>
+          </li>
+          <li>
+            <img src="IMG_6401.jpg" alt="高美濕地">
+            <div><strong>高美濕地：</strong> 招潮蟹、夕陽與風車，風景迷人。</div>
+          </li>
+          <li>
+            <img src="10.jpg" alt="逢甲夜市">
+            <div><strong>逢甲夜市：</strong> 全台最熱鬧夜市之一，小吃種類豐富，旁邊的麻將館一小時才75好評。</div>
+          </li>
+          <li>
+            <img src="8.WEBP" alt="第二市場">
+            <div><strong>第二市場：</strong> 聚集各式古早味美食，如王記菜頭粿。</div>
+          </li>
+          <li>
+            <img src="13.JPG" alt="豐原廟東夜市">
+            <div><strong>豐原廟東夜市：</strong> 米糕、鳳梨冰、蚵仔煎等人氣小吃，最推薦小肉圓，偏貴但總體來說很不錯。</div>
+          </li>
+          <li>
+            <img src="12345.PNG" alt="一中街">
+            <div><strong>一中街：</strong> 匯集各式各樣的店的一條街。</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>必吃美食推薦</h3>
+        <ul class="image-list">
+          <li>
+            <img src="1.JPG" alt="太陽餅">
+            <div><strong>太陽餅：</strong> 酥香中帶有麥芽甜味的台中名產。</div>
+          </li>
+          <li>
+            <img src="2.jpg" alt="台中肉圓">
+            <div><strong>台中肉圓：</strong> 肉圓普通，但冬粉湯超好喝。</div>
+          </li>
+          <li>
+            <img src="IMG_6407.PNG" alt="一中豐仁冰">
+            <div><strong>一中豐仁冰：</strong> 好吃的冰，cp值超高。</div>
+          </li>
+          <li>
+            <img src="4.JPG" alt="宮原眼科">
+            <div><strong>宮原眼科：</strong> 外觀像魔法學院，甜點與冰淇淋很有特色。</div>
+          </li>
+          <li>
+            <img src="666.jpg" alt="屋馬燒肉">
+            <div><strong>屋馬燒肉：</strong> 應該算是台中最有名的燒肉店，貴就完事了，還行但沒誰麼記憶點，但雞湯喝到飽。</div>
+          </li>
+          <li>
+            <img src="11.jpg" alt="台灣陳沙茶火鍋">
+            <div><strong>台灣陳沙茶火鍋：</strong> 私人推薦，好吃但沒什麼人知道。</div>
+          </li>
+          <li>
+            <img src="14.jpg" alt="繼光香香雞">
+            <div><strong>繼光香香雞：</strong> 1973年成立於台中市，其名來自台中市中區繼光街。</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
